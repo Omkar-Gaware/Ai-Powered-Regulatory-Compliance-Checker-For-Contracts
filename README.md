@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# Run the pipeline 
-python run.py --pdf data\raw\contract1.pdf
-
-
-# Run the streamlit web app
-streamlit run app.py
-=======
 # 📜 AI-Powered Regulatory Compliance Checker for Contracts
 
 An end-to-end **Generative AI–driven system** that automatically reviews contracts, detects regulatory compliance risks (GDPR, HIPAA), identifies missing clauses, generates legally safe amendments, and provides real-time alerts and audit logs.
@@ -242,7 +234,11 @@ This project is licensed under the **MIT License**.
 ## 👥 Contributors
 
 - **Charan** – Project Lead & Mentor
- 
+
+- **Student1** – Student Developer  
+- **Student2** – Student Developer  
+- **Student3** – Student Developer   
+- Open to community contributions 🚀  
 
 Feel free to fork this repository, raise issues, or submit pull requests.
 
@@ -252,4 +248,3 @@ Feel free to fork this repository, raise issues, or submit pull requests.
 ⭐ **If you like this project, give it a star on GitHub!**
 
 ---
->>>>>>> 792b9d918a0fc3c7164475899e238f7eac020167
