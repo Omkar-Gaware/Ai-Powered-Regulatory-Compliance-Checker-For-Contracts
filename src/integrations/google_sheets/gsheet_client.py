@@ -19,8 +19,18 @@ SCOPE = [
 # CLIENT FACTORY
 # =========================
 def get_spreadsheet():
-    creds = ServiceAccountCredentials.from_json_keyfile_name(
-        SERVICE_ACCOUNT_FILE, SCOPE
-    )
-    client = gspread.authorize(creds)
-    return client.open(SPREADSHEET_NAME)
+    # ensure credentials file exists before attempting to open spreadsheet
+    import os
+    if not os.path.exists(SERVICE_ACCOUNT_FILE):
+        print(f"⚠️ Google Sheets credentials '{SERVICE_ACCOUNT_FILE}' not found. Skipping sheet writes.")
+        return None
+
+    try:
+        creds = ServiceAccountCredentials.from_json_keyfile_name(
+            SERVICE_ACCOUNT_FILE, SCOPE
+        )
+        client = gspread.authorize(creds)
+        return client.open(SPREADSHEET_NAME)
+    except Exception as e:
+        print("⚠️ Unable to authorize Google Sheets client:", e)
+        return None

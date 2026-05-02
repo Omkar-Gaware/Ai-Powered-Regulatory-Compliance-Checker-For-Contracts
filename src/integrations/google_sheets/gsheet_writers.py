@@ -20,6 +20,9 @@ def write_contract_overview(data: dict):
     """
 
     spreadsheet = get_spreadsheet()
+    if not spreadsheet:
+        # nothing to do if spreadsheet client unavailable
+        return
     worksheet = spreadsheet.worksheet("Contracts_Overview")
 
     regulations = data.get("regulations_checked")
@@ -54,6 +57,8 @@ def write_compliance_issues(contract_id: str, issues: list):
         return
 
     spreadsheet = get_spreadsheet()
+    if not spreadsheet:
+        return
     worksheet = spreadsheet.worksheet("Compliance_Issues")
 
     rows = []
@@ -103,6 +108,8 @@ def write_action_audit(
     """
 
     spreadsheet = get_spreadsheet()
+    if not spreadsheet:
+        return
     worksheet = spreadsheet.worksheet("Actions_Audit")
 
     row = [
