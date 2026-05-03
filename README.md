@@ -210,9 +210,12 @@ This project is licensed under the **MIT License**.
 
 ## 👥 Contributors
 * **Rajeshwar Kalekar** – Project Lead & Mentor
-* **Omkar Gaware** – Student Developer
+* **Omkar Gaware** – Project Developer
 * **Akshay Devdhare** – Student Developer
-* **Shrikant Jadhav** – Student Developer
+* **Shrikant Jadhav** – Project Developer
+* Open to community contributions 🚀
+
+Feel free to fork this repository, raise issues, or submit pull requests.
 
 ---
 
