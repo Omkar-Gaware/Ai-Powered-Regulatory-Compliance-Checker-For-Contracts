@@ -101,7 +101,7 @@ Outputs + Notifications + Audit Logs
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/springboardmentor587-star/Compliance-Checker.git
+git clone https://github.com/Omkar-Gaware/Ai-Powered-Regulatory-Compliance-Checker-For-Contracts.git
 cd Compliance-Checker
 ```
 
