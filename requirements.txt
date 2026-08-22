@@ -13,6 +13,9 @@ reportlab
 bs4
 
 streamlit
+fastapi
+uvicorn[standard]
+python-multipart
 gspread
 oauth2client
 
